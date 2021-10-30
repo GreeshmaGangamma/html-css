@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+h1{
+    margin: 50px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+  width: 70%;
+  background:transparent;
+  color:black;
+  text-align: center;
+}
+
+.login-page {
+    width: 400px;
+    padding: 8% 10px 0;
+    margin: auto;
+   
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background:transparent;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+    max-height: auto;
+    color:white;
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background:transparent;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+    border:turquoise 2px solid;
+    color:white;
+  }
+  .form input[type="submit"] {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #7bb47d;
+    width: 30%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .form input[type="submit"]:hover,.form button:active,.form button:focus {
+    background: #0c60af;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQej513uKLUjTgSGkV3Uc3HUOnFImkzONg7hqDgH6l_gsCRU3Iys4vhlZ8mE56dS-71w_w&usqp=CAU);
+    background-size:cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    
