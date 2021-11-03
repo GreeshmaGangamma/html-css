@@ -9,49 +9,29 @@
     <script src="add.js"></script>
 </head>
 <body>
-    <form class="addEmployee" onsubmit="myFunction()" return false>
-        <h4 class="addEmployeeHeader">
-            Employee Information
-        </h4>
-        <br>
-        
-        <label>First Name</label>
-        <input type="text" name="firstName" id="fname">
-        <br>
-        <label>Last Name</label>
-        <input type="text" name="lastName" id="lname">
-        <br>
-        <label>Employee ID</label>
-        <input type="text" name="employeeID"id="empid">
-        <br>
-        <label>Password</label>
-        <input type="text" name="password"id="pswd">
-        <br><br><br>
-        <h4 class="addEmployeeHeader">Address</h4>
-        <label>Street Number</label>
-        <input type="text" name="streetNumber" id="srtnum">
-        <br>
-        <label>Street Name</label>
-        <input type="text" name="streetName"id="srtname">
-        <br>
-        <label>City</label>
-        <input type="text" name="city" id="city">
-        <br>
-        <label>State</label>
-        <input type="text" name="state"id="state">
-        <br>
-        <label>Zip</label>
-        <input type="text" name="zip" id="zip">
-        <br>
-        <label>Country</label>
-        <input type="text" name="country"id="country">
-        <br>
-        <br><br>
-        <input type="button" class="button redButton" value="Cancel">
-        <input class="button blueButton" type="submit" value="Add">
-        <br><br>
-        <h4 class="addEmployeeHeader">Click here to view Employee Details</h4>
-        <input type="submit" class="button listButton" value="List">
-    </form>
+    
+    <div id="container">
+        <form class="add_emp" >
+        <div class="input">Employee Name:
+            <input id ="fullname" type="text" placeholder="Enter Name"/>
+        </div>
+        <div class="input">Employee ID:
+            <input id ="empid" type="text" placeholder="Enter Employee ID"/>
+        </div>
+        <div class="input"> Address:
+            <input id ="address" type="text" placeholder="Enter address"/>
+        </div>
+        <div class="input"> Phone Number:
+        <input id ="phone" type="text" placeholder="Enter Phone number"/>
+        </div>
+        <button id = "entry">ADD</button>
+       
+       
+    </div>
+</form>
+</div>
+<div class="employees"></div>
+  
+  
 </body>
 </html>
