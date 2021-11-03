@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginForm</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="addEmployee" href="add.html">
     <script src="login.js"></script>
  
     
@@ -16,9 +17,9 @@
        <div class="form">
         <h1><strong>LOGIN PAGE</strong></h1>
     <form class="login-form" onsubmit="validation()" return false  >
-        <input type="text" placeholder="Employee ID" id="input_text">
-        <input type="password" placeholder="password" id="input_password">
-        <input type="submit"  value="LOGIN" onsubmit="myfunction()" >
+        <input type="text" placeholder="Employee ID" id="input_text" required><p class="error-message"></p>
+        <input type="password" placeholder="password" id="input_password" required><p clas="error-message"></p>
+        <input type="submit"  value="LOGIN"  >
         </form>
     </div>
 </div>
