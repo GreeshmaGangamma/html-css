@@ -53,9 +53,12 @@ document.addEventListener(
           validator(validateNumberField(age), "ageValidation") &&
           validator(validateNumberField(empid), "Validation")
           
-        )
+        ){
           addData({ name, age, empid, email });
+          }
+          
       });
+      
   },
   false
 );

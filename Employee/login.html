@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginForm</title>
     <link rel="stylesheet" href="style2.css">
-    <link rel="addEmployee" href="add.html">
     <script src="login.js"></script>
  
     
 </head>
 <body>
    
-    <div class="login-page">
-       <div class="form">
-        <h1><strong>LOGIN PAGE</strong></h1>
-    <form class="login-form" onsubmit="validation()" return false  >
-        <input type="text" placeholder="Employee ID" id="input_text" required><p class="error-message"></p>
-        <input type="password" placeholder="password" id="input_password" required><p clas="error-message"></p>
-        <input type="submit"  value="LOGIN"  >
-        </form>
-    </div>
-</div>
+    <form action="javascript:void(0);" method="post">
+        <div class="formContainer">
+          <h1>LOGIN FORM</h1>
+          <p >Note: username: admin; pswd:1234</p>
+          <div class="formInput">
+            <input id="name" type="text" placeholder="Enter UserName"/>
+            <div id="nameValidation" class="validation">Field can't be empty</div>
+          </div>
+          <div class="formInput">
+            <input id="pswd" type="number" placeholder="Enter Password"/>
+            <div id="pswdValidation" class="validation">Field can't be empty and must be a number</div>
+          </div>
+          <div class="formInput">
+            <input id="submit" type="submit" value="Submit">
+          
+          </div>
+          
+      </div>
+      </form>
 
 </body>
 </html>

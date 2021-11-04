@@ -1,3 +1,14 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQej513uKLUjTgSGkV3Uc3HUOnFImkzONg7hqDgH6l_gsCRU3Iys4vhlZ8mE56dS-71w_w&usqp=CAU);
+    background-size:cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
 .formContainer{
     width: 300px;
     padding: 30px;
@@ -5,7 +16,7 @@
     top: 50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background: rgba(211, 101, 101, 0.4);
+    background: transparent;
     text-align: center;
 }
 
@@ -16,11 +27,11 @@
     display: block;
     margin:20px auto;
     text-align:center;
-    border:3px solid #0367fd;
+    border:3px solid #031e47;
     padding:14px 10px;
     width: 220px;
     outline: none;
-    color:black;
+    color:white;
     border-radius: 12px;
     transition: 0.25px;
 }
@@ -37,21 +48,44 @@
     display: block;
     margin:20px auto;
     text-align:center;
-    border:3px solid #ffc400ec;
+    border:3px solid greenyellow;
     padding:14px 35px;
     outline: none;
-    color: white;
+    color:rgb(165, 152, 152);
+    font-weight:500px ;
+    font-size: 20px;
     border-radius: 24px;
     transition: 0.25px;
     cursor:pointer;
 }
 
 .formContainer input[type="submit"]:hover{
-    background: #ffc400ec;
+    background: rgb(193, 233, 114);
+    color:white;
 }
 
 .formContainer h1{
-    color:white;
+    color:rgb(221, 199, 241);
     text-transform: uppercase;
     font-weight: 700;
+}
+button{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align:center;
+    border:3px solid yellowgreen;
+    font-weight: 500px;
+    font-size: 20px;
+    padding:14px 35px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor:pointer;
+}
+button:hover{
+    background:  rgb(193, 233, 114);
+    color:white;
 }
