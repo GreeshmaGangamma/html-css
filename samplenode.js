@@ -1,7 +1,7 @@
 const http = require("http");
 const PORT = 8080;
 const url = require('url');
-const querystring = require('querystring');
+const querystring = require('query-string');
 const server = http.createServer(requsetHandler);
 
 var employees = [{"name":"greeshma", "age":"26", "empid":"1","email":"greeshma@gmail.com"}];
