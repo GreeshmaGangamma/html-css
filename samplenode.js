@@ -9,7 +9,6 @@ var employees = [{"name":"greeshma", "age":"26", "empid":"1","email":"greeshma@g
 
 function requsetHandler(req, res){
     const urlparse = url.parse(req.url, true);
-    // for get request
    if(req.method == "GET"){
     if(urlparse.pathname === "/login"){
         var req_body = '';
@@ -17,7 +16,7 @@ function requsetHandler(req, res){
             req_body += data;
         });
         req.on('end', function () {
-            var post_data = query_string.parse(req_body);
+            var post_data = querystring.parse(req_body);
             var user_name = post_data["user_name"];
             var password = post_data["password"];
             if(user_name === 'admin@gmail.com' && password === 'admin123')
@@ -57,16 +56,25 @@ function requsetHandler(req, res){
    }else if(req.method =="PUT"){
     if(urlparse.pathname === "/employee"){
     req.on('data', data => {
+        let completeBuffer = "";
+        completeBuffer+=data;
         const search = urlparse.search;
+        
+       
         if (search) {
           const [, query] = urlparse.search.split('?');
           const empid = querystring.parse(query).empid;
-          if (employees.empid == empid) {
-            const jsondata = JSON.parse(data);
-          }
 
-                }
-            })
+          employees.map((i,index)=>{
+            if(i.empid==empid){
+              const jsondata = JSON.parse(completeBuffer);
+              employees[index]=jsondata;
+              res.writeHead(200, {'Content-Type': 'application/json'});
+                res.end("Updated Succesfully");
+            }
+          })
+        }
+    })
         } else {
           const message = { message: 'no pathname!'};
           res.writeHead(400, {'Content-Type': 'application/json'});
@@ -81,6 +89,8 @@ function requsetHandler(req, res){
       const data = querystring.parse(query);
   
       employees = employees.filter(employees => employees.empid != data.empid);
+      res.writeHead(200, {'Content-Type': 'application/json'});
+      res.end("Deleted Succesfully");
 
     }else {
         const message = { message: 'no query parameter!' };
